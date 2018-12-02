@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88F0B6B721B45B1C00D142BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F0B6B621B45B1C00D142BF /* AppDelegate.swift */; };
-		88F0B6B921B45B1C00D142BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F0B6B821B45B1C00D142BF /* ViewController.swift */; };
 		88F0B6BC21B45B1C00D142BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F0B6BA21B45B1C00D142BF /* Main.storyboard */; };
-		88F0B6BF21B45B1C00D142BF /* ShoppingBasket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88F0B6BD21B45B1C00D142BF /* ShoppingBasket.xcdatamodeld */; };
 		88F0B6C121B45B1D00D142BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F0B6C021B45B1D00D142BF /* Assets.xcassets */; };
 		88F0B6C421B45B1D00D142BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F0B6C221B45B1D00D142BF /* LaunchScreen.storyboard */; };
 		88F0B6CF21B45B1D00D142BF /* ShoppingBasketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F0B6CE21B45B1D00D142BF /* ShoppingBasketTests.swift */; };
@@ -37,9 +35,7 @@
 /* Begin PBXFileReference section */
 		88F0B6B321B45B1C00D142BF /* ShoppingBasket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingBasket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F0B6B621B45B1C00D142BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88F0B6B821B45B1C00D142BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88F0B6BB21B45B1C00D142BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		88F0B6BE21B45B1C00D142BF /* ShoppingBasket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingBasket.xcdatamodel; sourceTree = "<group>"; };
 		88F0B6C021B45B1D00D142BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88F0B6C321B45B1D00D142BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88F0B6C521B45B1D00D142BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,12 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				88F0B6B621B45B1C00D142BF /* AppDelegate.swift */,
-				88F0B6B821B45B1C00D142BF /* ViewController.swift */,
 				88F0B6BA21B45B1C00D142BF /* Main.storyboard */,
 				88F0B6C021B45B1D00D142BF /* Assets.xcassets */,
 				88F0B6C221B45B1D00D142BF /* LaunchScreen.storyboard */,
 				88F0B6C521B45B1D00D142BF /* Info.plist */,
-				88F0B6BD21B45B1C00D142BF /* ShoppingBasket.xcdatamodeld */,
 			);
 			path = ShoppingBasket;
 			sourceTree = "<group>";
@@ -259,8 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F0B6BF21B45B1C00D142BF /* ShoppingBasket.xcdatamodeld in Sources */,
-				88F0B6B921B45B1C00D142BF /* ViewController.swift in Sources */,
 				88F0B6B721B45B1C00D142BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,19 +576,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		88F0B6BD21B45B1C00D142BF /* ShoppingBasket.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				88F0B6BE21B45B1C00D142BF /* ShoppingBasket.xcdatamodel */,
-			);
-			currentVersion = 88F0B6BE21B45B1C00D142BF /* ShoppingBasket.xcdatamodel */;
-			path = ShoppingBasket.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 88F0B6AB21B45B1C00D142BF /* Project object */;
 }
