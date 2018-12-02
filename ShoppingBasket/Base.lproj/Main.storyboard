@@ -11,7 +11,7 @@
         <!--Shop-->
         <scene sceneID="adW-vg-Doc">
             <objects>
-                <tableViewController id="mY7-Xv-A6n" sceneMemberID="viewController">
+                <tableViewController id="mY7-Xv-A6n" customClass="ShopViewController" customModule="ShoppingBasket" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kae-53-KSZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
         <!--Basket-->
         <scene sceneID="q6v-jS-OqH">
             <objects>
-                <tableViewController id="pXU-D6-dKP" sceneMemberID="viewController">
+                <tableViewController id="pXU-D6-dKP" customClass="BasketViewController" customModule="ShoppingBasket" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1Oy-jx-QCF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +83,7 @@
         <!--Checkout-->
         <scene sceneID="ooI-9o-h2E">
             <objects>
-                <tableViewController id="4ED-b4-Gm5" sceneMemberID="viewController">
+                <tableViewController id="4ED-b4-Gm5" customClass="CheckoutViewController" customModule="ShoppingBasket" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ecE-G3-bgW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +194,7 @@
         <!--Currency-->
         <scene sceneID="COG-Ku-IdO">
             <objects>
-                <tableViewController id="xkD-Qx-SH1" sceneMemberID="viewController">
+                <tableViewController id="xkD-Qx-SH1" customClass="CurrencyViewController" customModule="ShoppingBasket" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9WD-11-xOz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
