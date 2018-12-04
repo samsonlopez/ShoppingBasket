@@ -10,4 +10,23 @@ import Foundation
 
 class BasketViewModel {
     
+    //var basketItems = [BasketItem]()
+    var shoppingBasket = ShoppingBasket()
+    
+    func addItem(_ basketItem: BasketItem, itemID: Int) {
+        _ = shoppingBasket.addItem(basketItem)
+    }
+    
+    func getBasketItemViewData(at index: Int) -> BasketItemViewData {
+        let basketItem = shoppingBasket.getItem(at: index)! // TODO: Eliminate force unwrap.
+        let shopItem = basketItem.shopItem
+        let shopItemViewData = BasketItemViewData(name: shopItem.name, quantity: 1, price: shopItem.price, description: shopItem.description)
+        
+        return shopItemViewData
+    }
+
+    func removeFromBasket(itemIndex: Int) {
+        shoppingBasket.removeItem(at: itemIndex)
+    }
+
 }
