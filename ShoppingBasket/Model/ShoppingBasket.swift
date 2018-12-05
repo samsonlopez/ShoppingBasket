@@ -52,6 +52,15 @@ class ShoppingBasket {
         }
         return false
     }
+    
+    func getTotal() -> Double {
+        var total:Double = 0.0
+        for basketItem in basketItems {
+            total = total + basketItem.shopItem.price * Double(basketItem.quantity)
+        }
+        
+        return total
+    }
 }
 
 

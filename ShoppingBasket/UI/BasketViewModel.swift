@@ -10,7 +10,6 @@ import Foundation
 
 class BasketViewModel {
     
-    //var basketItems = [BasketItem]()
     var shoppingBasket = ShoppingBasket()
     
     func addItem(_ basketItem: BasketItem, itemID: Int) {
@@ -27,6 +26,10 @@ class BasketViewModel {
 
     func removeFromBasket(itemIndex: Int) {
         shoppingBasket.removeItem(at: itemIndex)
+    }
+    
+    func getTotal() -> Double {
+        return shoppingBasket.getTotal()
     }
 
 }

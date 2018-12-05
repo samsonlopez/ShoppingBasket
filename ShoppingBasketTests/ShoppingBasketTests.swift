@@ -47,5 +47,7 @@ class ShoppingBasketTests: XCTestCase {
     // TODO: More tests to be written for methods/properties:
     // getItem()
     // isItemExists()
+    // getTotal()
     // count
+    // ...
 }

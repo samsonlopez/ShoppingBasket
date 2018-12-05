@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Data object used between viewController and viewModel (ViewData pattern)
 struct BasketItemViewData {
     var name: String
     var quantity: Int

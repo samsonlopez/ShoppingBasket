@@ -50,7 +50,7 @@ class ShopViewController: UITableViewController {
     func configureCell(_ cell: ShopCellView, shopItemViewData: ShopItemViewData, index:Int) {
         cell.isAccessibilityElement = true // Required for UI Test recording.
         cell.textLabel!.text = "\(shopItemViewData.name) : \(shopItemViewData.description)"
-        cell.detailTextLabel!.text = "£\(shopItemViewData.price)"
+        cell.detailTextLabel!.text = Common.formatCurrency(number: shopItemViewData.price, code: Global.defaultBaseCurrency, locale:Locale.current)
 
         cell.addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
         cell.addButton.tag = index

@@ -8,7 +8,8 @@
 
 import Foundation
 
-// Item with reference to ShopItem added to the shopping basket
+// Item with reference to ShopItem added to the shopping basket.
+// Implementation for Equatable protocol used in unit testing.
 struct BasketItem: Equatable {
     var shopItem: ShopItem
     var quantity: Int

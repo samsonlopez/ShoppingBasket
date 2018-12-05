@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShopItemCell" textLabel="3D8-kh-dvT" detailTextLabel="g2V-e6-Vm9" style="IBUITableViewCellStyleValue1" id="jck-hG-DfH" customClass="ShopCellView" customModule="ShoppingBasket" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShopItemCell" textLabel="3D8-kh-dvT" detailTextLabel="ATT-5G-igZ" style="IBUITableViewCellStyleValue1" id="jck-hG-DfH" customClass="ShopCellView" customModule="ShoppingBasket" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jck-hG-DfH" id="JXL-xa-ilb">
@@ -31,7 +31,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g2V-e6-Vm9">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ATT-5G-igZ">
                                             <rect key="frame" x="315" y="12" width="44" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -102,7 +102,7 @@
                     <navigationItem key="navigationItem" title="Basket" id="mNw-uk-fFT">
                         <barButtonItem key="rightBarButtonItem" title="Checkout" id="V6g-yg-fLC">
                             <connections>
-                                <segue destination="4ED-b4-Gm5" kind="show" id="QW1-oS-fQV"/>
+                                <segue destination="4ED-b4-Gm5" kind="show" identifier="showCheckout" id="QW1-oS-fQV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -123,7 +123,7 @@
                         <sections>
                             <tableViewSection id="pmZ-h9-nag">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="faM-G2-EtF" style="IBUITableViewCellStyleDefault" id="b8a-kP-pyp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="faM-G2-EtF" detailTextLabel="Xff-Er-ge7" style="IBUITableViewCellStyleValue1" id="b8a-kP-pyp">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b8a-kP-pyp" id="1TS-mp-wY8">
@@ -131,7 +131,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="faM-G2-EtF">
-                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <rect key="frame" x="16" y="12" width="70.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xff-Er-ge7">
+                                                    <rect key="frame" x="296" y="12" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -140,7 +147,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="xkD-Qx-SH1" kind="show" id="kJk-1i-s67"/>
+                                            <segue destination="xkD-Qx-SH1" kind="show" identifier="showCurrency" id="kJk-1i-s67"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="sgN-LD-Ovy" detailTextLabel="dHT-7x-90b" style="IBUITableViewCellStyleValue1" id="Efc-mT-noY">
@@ -218,6 +225,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Checkout" id="j0g-8V-uUU"/>
+                    <connections>
+                        <outlet property="currencyCell" destination="b8a-kP-pyp" id="C3y-Mw-qhW"/>
+                        <outlet property="exchangeRateCell" destination="Efc-mT-noY" id="qlS-FH-eky"/>
+                        <outlet property="totalCell" destination="iA7-6K-KQw" id="qXo-h9-ZzH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C88-j0-OLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,7 +244,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="3JE-HJ-4Ws" detailTextLabel="TeK-lr-7g2" style="IBUITableViewCellStyleValue1" id="Crr-bC-BhN">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurrencyCell" textLabel="3JE-HJ-4Ws" detailTextLabel="TeK-lr-7g2" style="IBUITableViewCellStyleValue1" id="Crr-bC-BhN">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Crr-bC-BhN" id="YRf-mz-gGE">

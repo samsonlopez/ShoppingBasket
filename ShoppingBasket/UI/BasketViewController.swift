@@ -13,7 +13,12 @@ class BasketViewController: UITableViewController {
     // ViewModel reference property for BasketViewController, created in ShopViewController
     weak var viewModel: BasketViewModel!
     
+    // Parent view controller
     weak var shopViewController: ShopViewController!
+    
+    // Child view controllers
+    var checkoutViewController: CheckoutViewController? = nil
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +45,7 @@ class BasketViewController: UITableViewController {
     func configureCell(_ cell: UITableViewCell, basketItemViewData: BasketItemViewData, index:Int) {
         cell.isAccessibilityElement = true // Required for UI Test recording.
         cell.textLabel!.text = "\(basketItemViewData.name) : \(basketItemViewData.description)"
-        cell.detailTextLabel!.text = "£\(basketItemViewData.price)"
+        cell.detailTextLabel!.text = Common.formatCurrency(number: basketItemViewData.price, code: Global.defaultBaseCurrency, locale:Locale.current)
         
         let removeButton = UIButton(frame: CGRect(x: 0, y: 0, width: 80, height: 30))
         removeButton.setTitle("Remove", for: .normal)
@@ -57,11 +62,19 @@ class BasketViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    // Executed on back button (reverse segue)
     override func didMove(toParent parent: UIViewController?) {
         super.didMove(toParent: parent)
     
         if parent == nil {
             shopViewController.refreshShopItems()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCheckout" {
+            checkoutViewController = segue.destination as? CheckoutViewController
+            checkoutViewController?.basketViewController = self
         }
     }
 }
